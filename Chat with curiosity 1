@@ -1,0 +1,72 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chat with Curiosity — a simple AI-style chat experience created by Tanish Singh Thakur.">
+  <title>Chat with Curiosity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <button class="new-chat" id="newChat">＋ New chat</button>
+    <div class="history" id="history"></div>
+
+    <div class="sidebar-bottom">
+      <button class="new-chat" id="aboutBtn">ⓘ About</button>
+      <div class="profile">👤 Tanish Singh Thakur</div>
+    </div>
+  </aside>
+
+  <main class="app">
+    <header class="topbar">
+      <button class="menu" id="menuBtn">☰</button>
+      <strong>Chat with Curiosity</strong>
+    </header>
+
+    <section class="chat" id="chat">
+      <div class="welcome" id="welcome">
+        <div class="logo">✦</div>
+        <h1>Chat with Curiosity</h1>
+        <p>Ask questions, explore ideas and learn something new.</p>
+
+        <div class="suggestions">
+          <button data-prompt="Explain photosynthesis simply">Explain photosynthesis simply</button>
+          <button data-prompt="Give me a website idea">Give me a website idea</button>
+          <button data-prompt="Help me learn coding">Help me learn coding</button>
+          <button data-prompt="Write a short story">Write a short story</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="composer-wrap">
+      <form class="composer" id="composer">
+        <textarea id="input" rows="1" placeholder="Message Chat with Curiosity..."></textarea>
+        <button class="send" id="sendBtn" type="submit">↑</button>
+      </form>
+      <small>Chat with Curiosity is a demo AI-style website. Check important information.</small>
+    </div>
+  </main>
+
+  <div id="aboutModal" class="about-modal" aria-hidden="true">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">×</button>
+      <div class="logo">✦</div>
+      <h2>About Chat with Curiosity</h2>
+      <p>
+        Chat with Curiosity is a simple AI-style chat website made to provide
+        a clean and easy place to ask questions, explore ideas and learn.
+      </p>
+      <p>
+        This project was created by <strong>Tanish Singh Thakur</strong>.
+      </p>
+      <p>
+        This version is a front-end demo. It can later be connected to a real
+        AI service to provide model-generated answers.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
